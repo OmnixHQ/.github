@@ -10,21 +10,19 @@ Omnix is source-available middleware that connects Magento, Shopware, and Shopif
 
 | Repo | Package | What it does |
 |---|---|---|
-| [omnix-gateway](https://github.com/OmnixHQ/omnix-gateway) | `@omnix/gateway` | Multi-tenant UCP gateway — translates store APIs into UCP for AI agents |
-| [ucp-agent](https://github.com/OmnixHQ/ucp-agent) | `@omnix/agent` | AI shopping agent — Chat UI, AI Brain, tool execution over UCP |
-| [ucp-client](https://github.com/OmnixHQ/ucp-client) | `@omnix/client` | UCP client SDK — drop-in library for building UCP-compatible agents |
-
-> Repos `ucp-agent` and `ucp-client` are being renamed to `omnix-agent` and `omnix-client` as part of the Omnix rebrand.
+| [omnix-gateway](https://github.com/OmnixHQ/omnix-gateway) | — | Multi-tenant UCP gateway — translates store APIs into UCP for AI agents |
+| [omnix-agent](https://github.com/OmnixHQ/omnix-agent) | — | AI shopping agent — Chat UI, AI Brain, tool execution over UCP |
+| [ucp-client](https://github.com/OmnixHQ/ucp-client) | [`@omnixhq/ucp-client`](https://www.npmjs.com/package/@omnixhq/ucp-client) | Capability-aware TypeScript client for any UCP-compliant server |
 
 ---
 
 ## How it works
 
-```
+\`\`\`
 Magento 2   ╮
 Shopware 6  ├──▶  ⚡ Omnix Gateway  ──▶  ChatGPT / Gemini / Custom agents
 Shopify     ╯      (UCP protocol)
-```
+\`\`\`
 
 1. **Point your store** — add a single proxy rule to forward AI-agent traffic to Omnix
 2. **Omnix translates** — the gateway converts your store's native API into UCP
@@ -51,7 +49,9 @@ Node.js 22 · TypeScript · Fastify · Redis · PostgreSQL · Docker · Next.js 
 
 ## License
 
-All Omnix repositories are released under the [Elastic License 2.0 (ELv2)](https://www.elastic.co/licensing/elastic-license) — source-available, self-hostable, no vendor lock-in.
+`omnix-gateway` and `omnix-agent` are released under the [Elastic License 2.0 (ELv2)](https://www.elastic.co/licensing/elastic-license) — source-available, self-hostable, no vendor lock-in.
+
+`ucp-client` is released under the [MIT License](https://opensource.org/licenses/MIT) — use it freely in any project, commercial or otherwise.
 
 ---
 
