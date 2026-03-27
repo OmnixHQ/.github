@@ -18,11 +18,11 @@ Omnix is source-available middleware that connects Magento, Shopware, and Shopif
 
 ## How it works
 
-\`\`\`
+```
 Magento 2   ╮
 Shopware 6  ├──▶  ⚡ Omnix Gateway  ──▶  ChatGPT / Gemini / Custom agents
 Shopify     ╯      (UCP protocol)
-\`\`\`
+```
 
 1. **Point your store** — add a single proxy rule to forward AI-agent traffic to Omnix
 2. **Omnix translates** — the gateway converts your store's native API into UCP
