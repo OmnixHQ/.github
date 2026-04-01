@@ -12,6 +12,7 @@ Omnix is source-available middleware that connects Magento, Shopware, and Shopif
 |---|---|---|
 | [omnix-gateway](https://github.com/OmnixHQ/omnix-gateway) | — | Multi-tenant UCP gateway — translates store APIs into UCP for AI agents |
 | [omnix-agent](https://github.com/OmnixHQ/omnix-agent) | — | AI shopping agent — Chat UI, AI Brain, tool execution over UCP |
+| [ucp-js-sdk](https://github.com/OmnixHQ/ucp-js-sdk) | [`@omnixhq/ucp-js-sdk`](https://www.npmjs.com/package/@omnixhq/ucp-js-sdk) | Runtime-validated Zod schemas and TypeScript types for the UCP spec |
 | [ucp-client](https://github.com/OmnixHQ/ucp-client) | [`@omnixhq/ucp-client`](https://www.npmjs.com/package/@omnixhq/ucp-client) | Capability-aware TypeScript client for any UCP-compliant server |
 
 ---
@@ -50,6 +51,8 @@ Node.js 22 · TypeScript · Fastify · Redis · PostgreSQL · Docker · Next.js 
 ## License
 
 `omnix-gateway` and `omnix-agent` are released under the [Elastic License 2.0 (ELv2)](https://www.elastic.co/licensing/elastic-license) — source-available, self-hostable, no vendor lock-in.
+
+`ucp-js-sdk` is released under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) — use it freely in any project.
 
 `ucp-client` is released under the [MIT License](https://opensource.org/licenses/MIT) — use it freely in any project, commercial or otherwise.
 
